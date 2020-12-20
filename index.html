@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep</title>
+    <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="container"> <!--Główny blok-->
+		<div id= "toolbar">
+			<p style="word-spacing: 3cm; "> <!--Zrobiony odstęp między hiperłączami-->
+				<a href="index.html" target="_blank">Sklep</a>
+				<a href="index.html" target=_blank">Dostawa</a>
+				<a href="index.html" target=_blank">Rejestracja</a>
+			</p>
+		</div>
+		
+		<div id = "products">
+		</div>
+		
+		<div id="basketMenu">
+			<h3>Koszyk</h3>
+			
+			<div style="display: flex; flex-flow: row wrap; justify-content: space-between;">
+				<div class = "standardButton" onclick = "purchaseProducts();">
+					Zrób zakupy
+				</div>
+				<div class = "standardButton" onclick = "clearBasket();">
+					Wyczyść
+				</div>
+				<div id = "currentBasketPrice" class = "label" style = "" onclick = "clearBasket();">
+					Cena koszyka: 0 PLN
+				</div>
+			</div>
+			
+			<div id="basket">
+			</div>
+		</div>
+	</div>
+	<script>
+		loadProducts();
+	</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+	font-family: "Trebuchet MS";
+}
+
+#container
+{
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: white;
+	text-align: center;
+	
+	display: grid;
+	grid-template-areas:
+		'toolbar toolbar'
+		'products basketMenu';
+	grid-gap: 0px;
+	grid-template-columns: 75% 25%;
+}
+
+#toolbar
+{
+	grid-area: toolbar;
+	background-color: gray;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+#products {
+	grid-area: products;
+}
+
+#basketMenu
+{
+	grid-area: basketMenu;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+.card-block
+{
+	text-align: center;
+	display: inline-block;
+	width: 320px;
+	padding: 5px;
+}
+
+.card-block p
+{
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.standardButton {
+	padding: 2%;
+	margin-bottom: 2%;
+	width: 44%;
+	height: 35px;
+	background-color: grey;
+}
+
+.standardButton:hover {
+	background-color: white;
+	height: 35px;
+}
+
+.label {
+	padding: 2%;
+	width: 100%;
+	height: 35px;
+	background-color: grey;
+}
+
+.productLabel {
+	margin: 2%;
+	padding: 2%;
+	width: 100%;
+	height: 25px;
+	background-color: white;
+}
+
+#basket {
+	margin: 4%;
+}
